@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Estudio</title>
+    <link rel="stylesheet" href="stylos/stylos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Gestor de Estudio</h1>
+        <p>Organiza tus tareas y apuntes para estudiar mejor.</p>
+    </header>
+    <main>
+    <section class="formulario">
+        <form id="formNotas">
+        <div>
+            <label>Agrega tus Notas</label>
+            <input type="text" name="apuntes" id="apuntes" required placeholder="Escribe una nota...">
+        </div>
+        <div class="grupo">
+            <label>Selecciona la Materia:</label>
+            <select id="materia">
+                <option value="matematicas">Matematicas</option>
+                <option value="ingles">Ingles</option>
+                <option value="artes">Artes</option>
+                <option value="quimica">Quimica</option>
+            </select>
+        </div>
+  
+        <div class="grupo">
+            <label>Selecciona la importancia:</label>
+            <select id="importancia">
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            </select>
+        </div>
+    
+            <div>
+                <button type="submit" id="btnguardar">Guardar</button>
+            </div>
+        </form>
+    </section>
+    <section class="tabla">
+        <table id="tablaNotas">
+            <thead>
+                <tr>
+                    <th>Nota </th>
+                    <th>Materia </th>
+                    <th>Importancia </th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Gestor de Estudio Jesus Ruiz</p>
+    </footer>
+
+<script src="/config/config.js"></script>
+</body>
+</html>

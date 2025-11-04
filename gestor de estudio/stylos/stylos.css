@@ -1,0 +1,146 @@
+:root {
+  --primary: #4a63e7;
+  --bg: #f7f9fc;
+  --text: #222;
+  --radius: 10px;
+  --shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f2f4f7;
+  color: #1e1e2f;
+  line-height: 1.4;
+}
+
+header {
+  background:#ffffff;
+  border-bottom: 1px solid #d8dce0;
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.formulario {
+  background: #fff;
+  border: 1px solid #d8dce0;
+  padding: 25px;
+  width: 340px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfd3d8;
+  background: #fafbfc;
+  border-radius: var(--radius);
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: var(--primary);
+}
+
+button {
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-eliminar {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-eliminar:hover {
+  opacity: 0.8;
+}
+
+
+.tabla {
+  background: #fff;
+  border: 1px solid #d8dce0;
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 2px solid #eee;
+  color: var(--primary);
+}
+
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #e8ecff;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .formulario,
+  .tabla {
+    width: 100%;
+  }
+}
+
